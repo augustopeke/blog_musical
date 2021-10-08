@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <h1>Cadastro</h1><br>
+
+    <main class="container">
+        <form class="row g-3 needs-validation" novalidate>
+            <!--Nome-->
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Primeiro nome</label>
+                <input type="text" class="form-control" placeholder="Nome" required>
+                <div class="valid-feedback">
+                    Muito bem!
+                </div>
+            </div>
+
+            <!--Sobrenome-->
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" placeholder="Sobrenome" required>
+                <div class="valid-feedback">
+                    Muito bem!
+                </div>
+            </div>
+
+            <!--Usuário-->
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Usuário</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Por favor, escolha um nome de usuário.
+                    </div>
+                </div>
+
+            <!--Cidade-->
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                    Por favor, selecione uma cidade.
+                </div>
+            </div>
+
+            <!--Estado-->
+            <div class="col-md-2">
+                <label for="validationCustom04" class="form-label">Estado</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Selecione...</option>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>                 
+                </select>
+                <div class="invalid-feedback">
+                    Por favor, selecione um estado.
+                </div>
+            </div>
+
+            <!--Email-->
+            <div class="row">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" aria-description="emailHelp">
+                </div>
+            </div>
+
+            <!--Senha-->
+            <div class="row">
+                <div class="mb-3">
+                    <label for="password" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+            </div>
+
+            <!--Confirmar senha-->
+            <div class="row">
+                <div class="mb-3">
+                    <label for="password" class="form-label">Confirmar Senha</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+            </div>
+
+            <!--Termos e condições-->
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Aceito os termos e condições
+                    </label>
+                    <div class="invalid-feedback">
+                        É necessário concordar para continuar.
+                    </div>
+                </div>
+
+            <!--Enviar form-->
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
