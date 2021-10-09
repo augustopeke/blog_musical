@@ -6,9 +6,105 @@
 }
 
 body {
-    background-image: url(https://cdn.pixabay.com/photo/2016/11/22/19/15/hand-1850120_960_720.jpg);
+    width: 100%;
+    background: black;
 }
 
+.container {
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/22/19/15/hand-1850120_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 170px;
+}
+
+.menu {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    margin: 10px ;
+    padding: 10px 40px;
+    background-color: cornflowerblue;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-family: 'Lobster', cursive;
+}
+
+li > a:visited {
+    color: #ffffff; 
+}
+
+li:hover {
+        background-color: rgb(105, 70, 231);;
+        box-shadow: 0 0 1em rgb(105, 70, 231);
+        transition: 0.5s;
+}
+
+.title {
+    color: #ffffff;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px 5px 5px grey;
+}
+
+.notices h2 {
+    color: #ffffff;
+    font-size: 40px;
+    margin-left: 20px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 2px cornflowerblue;
+}
+
+.notices p {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 20px   ;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-around;      
+    padding: 10px;
+}
+
+.img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.footer h2 {
+    color: #ffffff;
+    font-size: 40px;
+    margin: 20px 20px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 2px cornflowerblue;
+    text-align: center ;
+}
+
+.footer a {
+    font-family: 'Bebas Neue', cursive; 
+    color: deepskyblue;
+    font-size: 20px;
+}
+
+.footer a:hover {
+    background-color: rgb(105, 70, 231);;
+    box-shadow: 0 0 1em rgb(105, 70, 231);
+    transition: 0.5s;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+
+/* Tela de login */
 
 .login-block { 
     box-shadow: 10px 10px 30px #000; 
