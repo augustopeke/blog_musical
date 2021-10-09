@@ -15,7 +15,7 @@
 
 <body>
 
-    <h1>Cadastro</h1><br>
+    <h1>Cadastro</h1>
 
     <main class="container">
         <form class="row g-3 needs-validation" novalidate>
@@ -43,7 +43,7 @@
                 <div class="input-group has-validation">
                     <span class="input-group-text" id="inputGroupPrepend">@</span>
                     <input type="text" class="form-control" id="validationCustomUsername"
-                        aria-describedby="inputGroupPrepend" required>
+                        aria-describedby="inputGroupPrepend" placeholder="usuário" required>
                     <div class="invalid-feedback">
                         Por favor, escolha um nome de usuário.
                     </div>
@@ -53,14 +53,14 @@
             </div>
             <div class="col-md-6">
                 <label for="validationCustom03" class="form-label">Cidade</label>
-                <input type="text" class="form-control" id="validationCustom03" required>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="Cidade" required>
                 <div class="invalid-feedback">
                     Por favor, selecione uma cidade.
                 </div>
             </div>
 
             <!--Estado-->
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <label for="validationCustom04" class="form-label">Estado</label>
                 <select class="form-select" id="validationCustom04" required>
                     <option selected disabled value="">Selecione...</option>
@@ -97,11 +97,48 @@
                 </div>
             </div>
 
+            <!--Gosto musical-->
+            <div class="col-md-3">
+                <label class="form-check-label">
+                    Gosto Musical:
+                </label>
+                <div class="mb-4">
+                    <input class="form-check-input" type="checkbox" value="rock" id="defaultCheck">
+                    <label class="form-check-label" for="defaultCheck">
+                          Rock
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="funk" id="defaultCheck">
+                    <label class="form-check-label" for="defaultCheck">
+                          Funk
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="pagode" id="defaultCheck">
+                    <label class="form-check-label" for="defaultCheck">
+                          Pagode
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="mpb" id="defaultCheck">
+                    <label class="form-check-label" for="defaultCheck">
+                          MPB
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="gospel" id="defaultCheck">
+                    <label class="form-check-label" for="defaultCheck">
+                          Gospel
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="pop" id="defaultCheck">
+                    <label class="form-check-label" for="defaultCheck">
+                          Pop
+                    </label>
+                    <input class="form-check-input" type="checkbox" value="reggae" id="defaultCheck">
+                    <label class="form-check-label" for="defaultCheck">
+                          Reggae
+                    </label>
+                </div>
+            </div>
+
             <!--Email-->
             <div class="row">
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" aria-description="emailHelp">
+                    <input type="email" class="form-control" id="email" aria-description="emailHelp" placeholder="exemplo@email.com">
                 </div>
             </div>
 
@@ -109,7 +146,7 @@
             <div class="row">
                 <div class="mb-3">
                     <label for="password" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" id="password" placeholder="********">
                 </div>
             </div>
 
@@ -117,7 +154,7 @@
             <div class="row">
                 <div class="mb-3">
                     <label for="password" class="form-label">Confirmar Senha</label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" id="password" placeholder="********">
                 </div>
             </div>
 
